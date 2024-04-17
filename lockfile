@@ -1,0 +1,5 @@
+const fs = require('fs');
+
+// Create a lock file to prevent multiple downloads
+fs.writeFileSync('download.lock', 'locked');
+console.log('Lock file created successfully.');
